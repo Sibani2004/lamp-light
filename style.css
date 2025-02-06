@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* border: 2px solid red; */
+    position: relative;
+    background: #0d1b2a;
+    height: 100vh;
+    width: 100%;
+    /* color: white; */
+    overflow: hidden;
+}
+
+.btn{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    background: rgb(84, 119, 121);
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s ease ;
+}
+
+.btn span{
+    /* border: 2px solid green; */
+    display: block;
+    background: rgb(12, 13, 63);
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s ease, margin-left 0.5s ;
+}
+
+.lamp__container{
+    /* border: 2px solid skyblue; */
+    position: absolute;
+    top: -40px;
+    left: 40%;
+    width: 200px;
+}
+
+.lamp{
+    /* border: 2px solid yellowgreen; */
+    width: 100%;
+    z-index: 99;
+}
+
+.light{
+    /* border: 2px solid pink; */
+    position: absolute;
+    top: 97%;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 700px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active{
+    background: rgb(97, 149, 153);
+
+}
+
+.active span{
+    background: rgb(207, 176, 176);
+    margin-left: 31px;
+}
+
+.on{
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: 100vh;
+        
+    }
+    .lamp__container {
+        left: 22%;
+        
+    }
+    .btn{
+        top: 5%;
+        left: 70%;
+        
+    }
+
+}
